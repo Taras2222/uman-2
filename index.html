@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+
+    <!--  Кнопка меню  -->
+    <button id="menuBtn"><i class="fas fa-bars"></i></button>
+
+    <!-- Боковое меню -->
+    <div id="sideMenu">
+    <a href="#">Головна</a>
+    <a href="#services">Послуги</a>
+    <a href="#">Фото</a>
+    <a href="#">Запитання</a>
+    <a href="contacts">Контакти</a>
+    <a href="#">Про нас</a>
+    </div>
+
+    <!--  Гостевая  -->
+    <section class="presentation" id="home">
+        <div class="presentation_wrapper">
+            <h1>
+                Послуги вантажників,<br>
+                вантажних перевезеннь<br>
+                Вантажні роботи будь якої складності
+                
+            </h1>
+            <p><font color="##55ff55">м.Умань та райони</font></p>
+            <button class="button" id="addBtn">Вантажники</button>
+            <button class="button" id="searchBtn">Вантажне авто</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Основной контейнер -->
+    
+    <div class="container" id="services">
+        <div class="container-header">
+            <h1>Наші види послуг</h1>
+            <p>Всі види послуг можливий розрахунок як готівковий так і безготівковий</p>
+        </div>
+
+        <div class="services">
+
+            <div class="service-card">
+                <img src="img/high-angle-delivery-men-concept.jpg" alt="Вантажники">
+                <div class="card-body">
+                <h3>Послуги вантажників</h3>
+                <p>Вартість роботи вантажників</p>
+                
+                </div>
+                <ul>
+                    <li><b>За годину </b><br>
+                        <hr>
+                        Від 350 грн / год. <br>
+                        Мінімальне замовлення 2 год.</li>
+                        
+                    <li><b>За тонаж</b><br>
+                        <hr>
+                        Від 2 000 грн / тонну. <br>
+                        Завантаження / розвантаження вантажних авто.<br>
+                        Підняття / спускання буд матеріалов, сміття.</li>
+                        
+                    
+                </ul>
+
+                <a href="tel:+380XXXXXXXXX" class="call-btn">
+                📞 Замовити дзвінок
+                </a>
+            </div>
+
+            <div class="service-card">
+                <img src="img/high-angle-delivery-service-car.jpg" alt="Вантажне авто">
+                <div class="card-body">
+                <h3>Послуги вантажного авто</h3>
+                <p>Вартість вантажного авто розраховується від відстані та часу</p>
+                </div>
+                <ul>
+                    <li><b>По місту</b><br>
+                        <hr>
+                        Від 500 грн / година.<br>
+                        Простой 250 грн / година.</li>
+                    <li><b>За місто</b><br>
+                        <hr>
+                        Розраховується від відстані.
+                    </li>
+                    <hr>
+                    <li><b>Розміри авто</b><br>
+                        <hr>
+                        Дліна- 3 м. <br>
+                        Ширина- 1,70 м. <br>
+                        Висота- 1,80 м. </li>
+                        <hr>
+                </ul>
+
+                <a href="tel:+380XXXXXXXXX" class="call-btn">
+                📞 Замовити дзвінок
+                </a>
+            </div>
+            
+
+            <div class="service-card">
+                <img src="img/6531bd172130e.webp" alt="Вантажники">
+                <div class="card-body">
+                <h3>Послуги вивезення сміття</h3>
+                <p>Вартість вивезення сміття залежить від тонажу.</p>
+                </div>
+                <ul>
+                    <li><b>За тонаж</b><br>
+                    Від 1 200 грн / 1 тонну. <br>
+                    Від 1 500 грн / 1,5 тонну. <br>
+                    Від 2 000 грн / 2 тонну.  </li>
+                    <li>Вивезення сміття на сміттезвалище.</li>
+                </ul>
+
+                <a href="tel:+380XXXXXXXXX" class="call-btn">
+                📞 Замовити дзвінок
+                </a>
+            </div>
+
+            
+
+            
+            
+
+            
+        </div>
+
+
+        
+
+    </div>
+
+
+    
+
+
+    
+
+
+
+
+
+
+    <!-- Футер -->
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/wh1techurch"><i class="fab fa-telegram"></i></a>
+        </div>
+        <p>&copy; 2026 Майстри України</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// --- Боковое меню ---
+const menuBtn = document.getElementById('menuBtn');
+const sideMenu = document.getElementById('sideMenu');
+menuBtn.onclick = () => {
+    sideMenu.style.left = sideMenu.style.left === "0px" ? "-250px" : "0px";
+};
+
+
+
+
+// ----- Закриття бокового меню -----
+
+document.addEventListener("click", function(event) {
+
+    // ----- Закриття модалок -----
+    if (event.target.classList.contains("modal")) {
+        event.target.style.display = "none";
+    }
+
+    // ----- Закриття бокового меню -----
+    if (
+        sideMenu.style.left === "0px" &&
+        !sideMenu.contains(event.target) &&
+        !menuBtn.contains(event.target)
+    ) {
+        sideMenu.style.left = "-250px";
+    }
+
+});
+
+
+
+
+
+
+
+// --- Модальные окна ---
+const addBtn = document.getElementById('addBtn');
+const searchBtn = document.getElementById('searchBtn');
+
+addBtn.onclick = () => { document.getElementById('addModal').style.display = 'flex'; }
+searchBtn.onclick = () => { document.getElementById('searchModal').style.display = 'flex'; }
+
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+// Закрытие модалки при клике вне окна
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+    }
+}
+</script>
+
+
+
+</body>
+</html>
