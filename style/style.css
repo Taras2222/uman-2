@@ -268,7 +268,7 @@ body {
 }
 
 .gallery img {
-    width: 100%;
+    width: 50%;
     margin-bottom: 20px;
     border-radius: 15px;
 }
@@ -386,4 +386,5 @@ footer {
 
 .social-icons a:hover {
     color: #ff6600;
+
 }
